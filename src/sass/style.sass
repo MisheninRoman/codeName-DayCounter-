@@ -12,6 +12,13 @@ body
     width: 100%
     flex-direction: column
     background-color: #6c6cce
+    &-title
+        display: flex
+        justify-content: center
+        padding: 0
+        margin: 10px 0 0 0
+        font-size: 20px
+        text-transform: 
     &-main
         display: flex
         margin: 10px auto 0 auto
@@ -50,11 +57,19 @@ body
             background-color: #6c6cce
             border-radius: 10px
             height: 290px
+            flex-direction: column
             &-title
                 display: flex
                 margin: 10px auto 0 auto
+            &-story
+                display: flex
+                width: 95%
+                padding: 0 10px 0 10px
+                margin: 10px auto 0 auto
+                font-size: 18px
         &__timer
             display: flex
+            flex-direction: column
             background-color: #6c6cce
             border-radius: 10px
             height: 150px
@@ -63,5 +78,33 @@ body
                 display: flex
                 margin: 10px auto 0 auto
                 font-weight: 100
-                font-size: 10px
-
+                font-size: 15px
+            &-time
+                display: flex
+                flex-direction: row
+                justify-content: center
+                font-size: 32px
+                width: 80%
+                height: 100%
+                margin: 0 auto
+                &__days, &__hours, &__minutes, &__seconds
+                    display: flex
+                    width: 20%
+                    height: 50%
+                    background-color: #fff
+                    justify-content: center
+                    align-items: center
+                    border-radius: 10px
+                &__hours, &__minutes, &__seconds
+                    margin-left: 10px 
+.foot
+    display: flex
+    height: 150px
+    margin: 10px auto 0 auto
+    &-main
+        display: flex
+        height: 100%
+        width: 100%
+        background-color: #6c6cce
+        justify-content: center
+        align-items: center
